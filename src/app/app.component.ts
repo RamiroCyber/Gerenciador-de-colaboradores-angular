@@ -20,7 +20,6 @@ export class AppComponent implements OnInit {
     this.employeeService.getEmployees().subscribe(
       (response: Employee[]) => {
         this.employess = response;
-        console.log(this.employess)
       },
       (error: HttpErrorResponse) => {
         alert(error.message)
