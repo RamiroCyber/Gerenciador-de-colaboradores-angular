@@ -43,6 +43,7 @@ export class AppComponent implements OnInit {
       button.setAttribute('data-target','#deleteEmployeeModal')
     }
     container?.appendChild(button);
+    button.click();
   }
 
 
